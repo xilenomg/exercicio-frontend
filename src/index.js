@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+import Header from './components/Header';
+import './style.scss';
 
 const App = () => {
-  return <div>Webpack is working</div>;
+  return (
+    <Fragment>
+      <Header />
+    </Fragment>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById('app-frontend'));
