@@ -1,12 +1,24 @@
-html, body {
+@import './common/styles/variables.scss';
+
+html,
+body {
   padding: 0px;
   margin: 0px;
 }
 
 body {
-  background: #dae3e7;
+  background: $grey-1;
+  font-family: $font-2;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.font-common {
+  font-family: $font-1;
+}
+
+.font-special {
+  font-family: $font-2;
 }
