@@ -1,0 +1,17 @@
+@import '../../common/styles/variables.scss';
+
+.progress-bar {
+  width: 100%;
+  height: 16px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: $grey-11;
+
+  &__trail {
+    background: $green-1;
+    display: block;
+    transition: 0.5s all ease;
+    height: 100%;
+    width: 0%;
+  }
+}

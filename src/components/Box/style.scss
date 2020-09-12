@@ -3,6 +3,11 @@
   background: $white;
   padding: 16px;
 
+  &__title {
+    font-size: 1.5rem;
+    color: $grey-6;
+  }
+
   @media screen and (min-width: $medium) {
     padding: 32px;
   }

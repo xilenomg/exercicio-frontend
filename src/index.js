@@ -20,10 +20,11 @@ const user = {
   skillsInfo: {
     description: 'Intro about your skills goes here',
     skills: [
-      { name: 'Python & Django', level: 'expert' },
-      { name: 'Javascript & jQuery', level: 'expert' },
-      { name: 'HTML5 , CSS3, SASS & LESS', level: 'expert' },
-      { name: 'Ruby on Rails', level: 'pro' },
+      { name: 'Python & Django', level: 'newbie' },
+      { name: 'Javascript & jQuery', level: 'beginner' },
+      { name: 'HTML5 , CSS3, SASS & LESS', level: 'skillful' },
+      { name: 'Ruby on Rails', level: 'proficient' },
+      { name: 'Java', level: 'expert' },
     ],
   },
   contactInfo: {
