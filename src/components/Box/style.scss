@@ -1,0 +1,9 @@
+@import '../../common/styles/variables.scss';
+.box {
+  background: $white;
+  padding: 16px;
+
+  @media screen and (min-width: $medium) {
+    padding: 32px;
+  }
+}

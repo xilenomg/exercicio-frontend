@@ -27,9 +27,9 @@ const Header = (props) => {
           />
         </div>
 
-        {user && user.email && (
+        {user && user.contactInfo.email && (
           <div className="header__profile-contact">
-            <ContactButton email={user.email} />
+            <ContactButton email={user.contactInfo.email} />
           </div>
         )}
       </PageContainer>

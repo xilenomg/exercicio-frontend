@@ -12,6 +12,7 @@ $grey-8: #74808d;
 $green-1: #69ca8d;
 $green-2: #57b952;
 $green-3: #06a24e;
+$green-4: #53b076;
 
 $blue-1: #4a9fc6;
 
@@ -26,4 +27,4 @@ $large: 992px;
 $extra-large: 1200px;
 
 // container width
-$container-width: 1256px;
+$container-width: $extra-large;
