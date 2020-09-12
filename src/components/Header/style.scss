@@ -1,5 +1,39 @@
 @import '../../common/styles/variables.scss';
+
 .header {
   border-top: 10px solid $grey-5;
   background: $grey-1;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__profile-image {
+    margin-bottom: 16px;
+  }
+
+  &__profile-contact {
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: $medium) {
+    &__content {
+      flex-direction: row;
+    }
+
+    &__profile-image {
+      margin-bottom: 0px;
+    }
+
+    &__profile-details {
+      margin-left: 16px;
+      flex: 1;
+    }
+
+    &__profile-contact {
+      margin-top: 0px;
+    }
+  }
 }

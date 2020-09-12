@@ -1,0 +1,26 @@
+@import '../../common/styles/variables.scss';
+
+.user-details {
+  display: inline-block;
+  &__name {
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: $grey-7;
+  }
+
+  &__role {
+    font-family: $font-1;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: $grey-8;
+    margin-bottom: 16px;
+  }
+
+  &__social-networks {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

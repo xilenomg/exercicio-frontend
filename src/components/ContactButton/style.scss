@@ -1,0 +1,24 @@
+@import '../../common/styles/variables.scss';
+
+.contact-button {
+  border: 1px solid $green-2;
+  background: $green-2;
+  border-radius: 6px;
+  padding: 8px;
+  display: inline-flex;
+  color: $white;
+  transition: 0.3s all ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  align-items: center;
+
+  img {
+    margin-right: 8px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

@@ -1,0 +1,9 @@
+.social-network {
+  cursor: pointer;
+  &__image {
+    transition: 0.3s all ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

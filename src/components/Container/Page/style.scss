@@ -1,0 +1,11 @@
+@import '../../../common/styles/variables.scss';
+
+.page-container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 16px;
+
+  @media screen and (min-width: $extra-large) {
+    padding: 16px 0px;
+  }
+}

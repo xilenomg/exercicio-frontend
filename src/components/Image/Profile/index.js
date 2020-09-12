@@ -30,10 +30,12 @@ const ProfileImage = (props) => {
 
 ProfileImage.propTypes = {
   src: PropTypes.string,
+  className: PropTypes.string,
 };
 
 ProfileImage.defaultProps = {
   src: '',
+  className: '',
 };
 
 export default ProfileImage;
