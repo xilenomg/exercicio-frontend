@@ -1,0 +1,59 @@
+@import '../../../common/styles/variables.scss';
+
+.single-project {
+  display: flex;
+  flex-direction: column;
+
+  &__image-placeholder {
+    flex: 1 1 100%;
+    margin-bottom: 16px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__details {
+    flex: 1 1 100%;
+  }
+
+  &__title {
+    color: $grey-5;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    margin-top: 16px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $grey-12;
+  }
+
+  &__find-out-more {
+    color: $green-5;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 16px;
+
+    img {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (min-width: $small) {
+    flex-direction: row;
+
+    &__image-placeholder {
+      flex: 1 1 40%;
+      margin-right: 16px;
+    }
+
+    &__details {
+      flex: 1 1 60%;
+    }
+  }
+}

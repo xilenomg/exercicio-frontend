@@ -19,6 +19,7 @@ const UserDetails = (props) => {
           {socialNetworksKeys.map((socialNetwork) => {
             return (
               <SocialNetwork
+                key={socialNetwork}
                 type={socialNetwork}
                 account={socialNetworks[socialNetwork]}
                 className="user-details__social-networks__social-network-single"

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/Header';
 import Body from './components/Body';
@@ -7,6 +7,7 @@ import LatestProjects from './components/LatestProjects';
 import ContactInfo from './components/ContactInfo';
 import Skill from './components/Skill';
 import PageContainer from './components/Container/Page';
+import { getProjects } from './services/Project';
 import './style.scss';
 
 const user = {
@@ -42,6 +43,15 @@ const user = {
 };
 
 const App = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      const projectsLoaded = await getProjects();
+      setProjects(projectsLoaded)
+    })();
+  }, []);
+
   return (
     <Fragment>
       <Header user={user} />
@@ -50,7 +60,7 @@ const App = () => {
         <Body>
           <Body.Left>
             <AboutMe user={user} />
-            <LatestProjects />
+            <LatestProjects projects={projects} />
           </Body.Left>
           <Body.Right>
             <ContactInfo user={user} />

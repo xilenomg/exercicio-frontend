@@ -10,8 +10,8 @@ const AboutMe = (props) => {
       <Box.Title>About Me</Box.Title>
 
       {user.aboutMe &&
-        user.aboutMe.map((paragraph) => {
-          return <p>{paragraph}</p>;
+        user.aboutMe.map((paragraph, index) => {
+          return <p key={index}>{paragraph}</p>;
         })}
     </Box>
   );

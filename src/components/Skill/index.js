@@ -14,7 +14,13 @@ const Skill = (props) => {
       <Box.Title>Skills</Box.Title>
       {skillsInfo.description && <p>{skillsInfo.description}</p>}
       {skillsInfo.skills.map((skill) => {
-        return <SkillProgressBar name={skill.name} levelKey={skill.level} />;
+        return (
+          <SkillProgressBar
+            key={skill.name}
+            name={skill.name}
+            levelKey={skill.level}
+          />
+        );
       })}
     </Box>
   );

@@ -1,0 +1,18 @@
+@import '../../common/styles/variables.scss';
+
+.latest-projects {
+  .single-project {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__separator {
+    height: 1px;
+    border-top: 1px solid #EFEFEF;
+    border-bottom: 0px;
+    margin-bottom: 64px;
+    margin-top: 64px;
+  }
+}
