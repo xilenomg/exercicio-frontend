@@ -10,9 +10,7 @@ import PageContainer from '../components/Container/Page';
 import { fetchProjects } from '../redux/actions/projects';
 import { fetchUser } from '../redux/actions/user';
 
-const App = (props) => {
-  const { projects, user } = props;
-
+const App = () => {
   return (
     <Fragment>
       <Header />
@@ -32,12 +30,8 @@ const App = (props) => {
   );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    user: state.userReducer.user,
-    projects: state.projectReducer.projects,
-    loading: state.projectReducer.loading,
-  };
+const mapStateToProps = () => {
+  return {};
 };
 
 const mapDispatchToProps = (dispatch) => ({

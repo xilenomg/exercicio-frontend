@@ -18,9 +18,9 @@ function receiveProjects(projects) {
 export function fetchProjects() {
   return (dispatch) => {
     dispatch(requestProjects());
-    (async () => {
+    setTimeout(async () => {
       const projects = await getProjects();
       dispatch(receiveProjects(projects));
-    })();
+    }, 3000);
   };
 }

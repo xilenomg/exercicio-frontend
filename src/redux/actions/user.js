@@ -18,9 +18,9 @@ function receiveUser(user) {
 export function fetchUser() {
   return (dispatch) => {
     dispatch(requestUser());
-    (async () => {
+    setTimeout(async () => {
       const user = await getUser();
       dispatch(receiveUser(user));
-    })();
+    }, 1500);
   };
 }
